@@ -1,0 +1,31 @@
+{
+  "name": "koreai_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Harshit Joshi",
+  "dependencies": {
+    "@prisma/client": "^4.2.1",
+    "express": "^4.18.1",
+    "moment": "^2.29.4",
+    "sqlite3": "^5.0.11",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.3",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.3",
+    "concurrently": "^7.3.0",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.2.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ./dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon ./dist/index.js\""
+  }
+}
