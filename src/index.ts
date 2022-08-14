@@ -5,7 +5,7 @@ import swaggerJSDoc from "swagger-jsdoc";
 import { SwaggerOptions } from "swagger-ui-express";
 const swagger = require("swagger-ui-express");
 const app: Express = express();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const swaggerOptions: SwaggerOptions = {
   swaggerDefinition: {
